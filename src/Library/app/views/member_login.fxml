@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Library.app.controllers.MemberLoginController"
+            prefWidth="430" prefHeight="370"
+            style="-fx-background-color: white;">
+
+    <VBox alignment="CENTER" spacing="15" layoutX="65" layoutY="50"
+          prefWidth="300" prefHeight="270">
+
+        <Label text="MEMBER LOGIN"
+               style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #000000;"/>
+
+        <TextField fx:id="memberIdField" promptText="Member ID"
+                   style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-prompt-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 4; -fx-pref-width: 220; -fx-pref-height: 35;"/>
+
+        <PasswordField fx:id="passwordField" promptText="Password (Last 3 Digit of ID)"
+                       style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-prompt-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 4; -fx-pref-width: 220; -fx-pref-height: 35;"/>
+
+        <Button fx:id="loginBtn" text="LOGIN" onAction="#handleLogin"
+                style="-fx-background-color: #4A79A7; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 120; -fx-pref-height: 35;"/>
+
+        <Label fx:id="messageLabel" textFill="red" style="-fx-font-size: 13px;"/>
+        <Button fx:id="backBtn" text="← Back" onAction="#handleBack"
+                layoutX="10" layoutY="10"
+                style="-fx-background-color: transparent; -fx-text-fill: black; -fx-font-weight: bold; -fx-font-size: 12px;"/>
+
+    </VBox>
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</AnchorPane>

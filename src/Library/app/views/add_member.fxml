@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Library.app.controllers.AddmemberController">
+
+    <children>
+        <Label layoutX="148.0" layoutY="89.0" text="Name"
+               style="-fx-background-color: yellow;" />
+        <TextField fx:id="nameField"
+                   layoutX="235.0" layoutY="85.0"
+                   prefHeight="25.0" prefWidth="149.0"
+                   promptText="Enter member name" />
+
+        <Label layoutX="148.0" layoutY="125.0" text="ID"
+               style="-fx-background-color: yellow;" />
+        <TextField fx:id="idField"
+                   layoutX="235.0" layoutY="121.0"
+                   prefHeight="25.0" prefWidth="149.0"
+                   promptText="Enter member ID" />
+
+        <Button layoutX="258.0" layoutY="217.0" text="Add Member"
+                onAction="#handleAddMember" />
+
+        <Button layoutX="20.0" layoutY="20.0" text="Back"
+                onAction="#handleBack" />
+
+        <Label fx:id="messageLabel"
+               layoutX="210.0" layoutY="270.0"
+               textFill="white"
+               style="-fx-font-size: 14px;" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="405.0" prefWidth="390.0" style="-fx-background-color: linear-gradient(to bottom right, #0087dc, #0087dc);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Library.app.controllers.AdminLoginController">
+
+    <VBox alignment="CENTER" layoutX="50" layoutY="40" prefHeight="170" prefWidth="300" spacing="15">
+
+        <Label fx:id="messageLabel" style="-fx-font-size: 14px;" textFill="white" />
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Admin Login" textFill="white" />
+    </VBox>
+    <Button fx:id="backBtn" layoutX="10" layoutY="10" onAction="#handleBack" style="-fx-background-color: transparent; -fx-text-fill: black; -fx-font-weight: bold; -fx-font-size: 12px;" text="← Back" />
+
+     <Button fx:id="loginBtn" layoutX="163.0" layoutY="255.0" onAction="#handleLogin" style="-fx-background-color: #ffffff; -fx-text-fill: #145A9E; -fx-font-weight: bold; -fx-background-radius: 8; -fx-padding: 8 16;" text="Login" />
+
+     <TextField fx:id="adminIdField" layoutX="122.0" layoutY="193.0" maxWidth="220" promptText="Enter Admin ID" style="-fx-background-radius: 8; -fx-padding: 8;" />
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+</AnchorPane>
