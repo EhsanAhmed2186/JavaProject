@@ -62,12 +62,12 @@ public class AddmemberController {
 
     @FXML
     private void handleBack(ActionEvent event) {
-        switchScene("/Library/app/views/admin_dashboard.fxml", (Node) event.getSource());
+        switchScene((Node) event.getSource());
     }
 
-    private void switchScene(String fxmlPath, Node node) {
+    private void switchScene(Node node) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Library/app/views/admin_dashboard.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) node.getScene().getWindow();
             stage.setScene(new Scene(root));

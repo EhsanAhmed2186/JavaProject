@@ -7,9 +7,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import java.io.IOException;
 
 public class LibraryMainController {
+    public static final Logger logger = Logger.getLogger(LibraryMainController.class.getName());
 
     @FXML
     private void onAdminClick() {
@@ -28,7 +32,7 @@ public class LibraryMainController {
                 stage.show();
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "An error occurred", e);
         }
     }
     @FXML
