@@ -9,7 +9,7 @@
       <Button layoutX="214.0" layoutY="86.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Add New Book" />
       <Button layoutX="214.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Checkout Book" />
       <Button layoutX="214.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="View Details of Books" />
-      <Button layoutX="214.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="View Details of All Members" />
+      <Button layoutX="214.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleViewMembers" prefHeight="25.0" prefWidth="173.0" text="View Details of All Members" />
        <Button fx:id="backBtn" layoutX="10" layoutY="10" onAction="#handleBack" style="-fx-background-color: transparent; -fx-text-fill: black; -fx-font-weight: bold; -fx-font-size: 12px;" text="← Back" />
    </children>
 </AnchorPane>

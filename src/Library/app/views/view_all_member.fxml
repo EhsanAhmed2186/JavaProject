@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Library.app.controllers.Allmembercontroller"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Library.app.controllers.AllMembersController">
 
+    <children>
+
+        <Label layoutX="230.0" layoutY="20.0" text="All Members"
+               style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+
+        <TextField fx:id="searchField"
+                   layoutX="180.0" layoutY="60.0"
+                   prefWidth="240.0"
+                   promptText="Search by Name or ID" />
+
+
+        <TableView fx:id="memberTable"
+                   layoutX="80.0" layoutY="100.0"
+                   prefWidth="440.0" prefHeight="220.0">
+
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="220.0" />
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="220.0" />
+            </columns>
+        </TableView>
+
+
+        <Label fx:id="messageLabel"
+               layoutX="230.0" layoutY="340.0"
+               textFill="black"
+               style="-fx-font-size: 13px;" />
+
+
+        <Button text="Back"
+                layoutX="20.0" layoutY="20.0"
+                onAction="#handleBack" />
+    </children>
 </AnchorPane>

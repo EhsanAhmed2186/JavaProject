@@ -26,6 +26,10 @@ public class AdminDashboardController {
     private void handleAddMember(ActionEvent event){
         switchScene("/Library/app/views/add_member.fxml",(Node) event.getSource());
     }
+    @FXML
+    private void handleViewMembers(ActionEvent event) {
+        switchScene("/Library/app/views/view_all_member.fxml", (Node) event.getSource());
+    }
 
     private void switchScene(String fxmlPath, Node node) {
         try {
