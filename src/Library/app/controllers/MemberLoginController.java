@@ -1,8 +1,6 @@
 package Library.app.controllers;
 
-import Library.data.DataHandler;
-import Library.model.Library;
-import Library.model.Member;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+import model.*;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -1,8 +1,8 @@
 package Library.app.controllers;
 
-import Library.data.DataHandler;
-import Library.model.Library;
-import Library.model.Member;
+
+import model.*;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

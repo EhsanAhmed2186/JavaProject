@@ -1,6 +1,6 @@
 package Library.app.controllers;
 
-
+import model.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

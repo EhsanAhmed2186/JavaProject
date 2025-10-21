@@ -1,8 +1,6 @@
 package Library.app.controllers;
 
-import Library.data.DataHandler;
-import Library.model.Library;
-import Library.model.Member;
+import model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;

@@ -1,5 +1,5 @@
 package Library.app.controllers;
-
+import model.*;
 import javafx.application.Application;
 
 public class Launcher {
